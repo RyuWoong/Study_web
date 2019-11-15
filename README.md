@@ -1,5 +1,5 @@
 # Study_web
-**웹을 공부하기 위해 만든 Study_web git입니다.
+**웹을 공부하기 위해 만든 Study_web git입니다. **
 
 <hr />
 
