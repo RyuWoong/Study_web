@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px; 
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray; 
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        
+        @media (max-width:500px){
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside{
+            border: none; 
+            flex-basis: auto;
+            }
+            main{
+                order: 0; 
+            }
+            nav{
+                order: 1;
+            }
+            aside {
+                order: 2;
+                display: none;
+            }
+        }
+        
+        nav,aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum iusto ex, maxime nisi magni, debitis expedita consequuntur laudantium magnam. Beatae velit aspernatur libero laudantium quia unde perferendis, inventore, nemo dolor consectetur eum sint ipsam autem nisi vitae dolorum veritatis? Ratione fugit totam necessitatibus molestiae atque mollitia repudiandae vitae voluptas, odit officia asperiores soluta ut et magni minima, ipsam, enim voluptatem perspiciatis consequatur. Facilis labore eligendi ullam vero iusto adipisci, voluptates rerum, molestias modi at qui. Id doloremque eveniet, possimus explicabo libero neque nisi inventore quasi corporis numquam incidunt minima,
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://opentutorials.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
